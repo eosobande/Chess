@@ -1,0 +1,18 @@
+<resources>
+    <string name="app_name">Chess</string>
+    <string name="reset">Reset Game</string>
+    <string name="reset_dialog">Are you sure you want to reset the game?</string>
+
+    <string name="player_1_name">player 1 name</string>
+    <string name="player_2_name">player 2 name</string>
+    <string name="turn">your turn</string>
+    <string name="title_activity_main2">Main2Activity</string>
+    <string name="game_reset">Game Reset</string>
+    <string name="game_over">Game Over! %s is checkmated!</string>
+    <string name="in_check">%s in check!</string>
+    <string name="self_check">You cannot play your king into check!</string>
+    <string name="protect">%s in check, you must protect your king!</string>
+    <string name="stalemate">Stalemate detected. Game Over!</string>
+    <string name="promotion">You\'ve earned the right to promote your Pawn. Which chessman would you like?</string>
+
+</resources>

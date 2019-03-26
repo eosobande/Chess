@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/light"
+    tools:context="com.quantipixels.chess.ChessActivity">
+
+    <LinearLayout
+        android:background="@color/colorPrimaryDark"
+        android:id="@+id/chessboardframe"
+        android:paddingRight="1dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingEnd="1dp">
+
+        <com.quantipixels.chess.ChessBoard
+            android:id="@+id/chessboard"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/topPanel"
+        android:layout_toRightOf="@id/chessboardframe"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_toEndOf="@id/chessboardframe">
+
+        <TextView
+            android:layout_toRightOf="@id/p2"
+            android:textStyle="bold"
+            android:textColor="@color/black"
+            android:padding="15dp"
+            android:id="@+id/player2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toEndOf="@id/p2" />
+
+        <ImageView
+            android:id="@+id/p2"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="15dp"
+            android:src="@drawable/black_circle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="15dp" />
+
+        <TextView
+            android:layout_below="@id/player2"
+            android:textStyle="bold"
+            android:textColor="@color/dark"
+            android:layout_marginLeft="15dp"
+            android:layout_marginStart="15dp"
+            android:id="@+id/turn2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_below="@id/topPanel"
+        android:layout_toRightOf="@id/chessboardframe"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_toEndOf="@id/chessboardframe">
+
+        <TextView
+            android:textStyle="bold"
+            android:textColor="@color/white"
+            android:padding="15dp"
+            android:id="@+id/player1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/p1"
+            android:layout_toEndOf="@id/p1" />
+
+        <ImageView
+            android:layout_marginLeft="15dp"
+            android:id="@+id/p1"
+            android:layout_marginTop="15dp"
+            android:src="@drawable/green_circle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="15dp" />
+
+        <TextView
+            android:layout_below="@id/player1"
+            android:textStyle="bold"
+            android:textColor="@color/dark"
+            android:layout_marginLeft="15dp"
+            android:layout_marginStart="15dp"
+            android:id="@+id/turn1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+    </RelativeLayout>
+
+</RelativeLayout>
